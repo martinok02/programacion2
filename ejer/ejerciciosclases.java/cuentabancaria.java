@@ -2,12 +2,16 @@ public class cuentabancaria {
     private string titular;
     private double saldo;
     private int numeroCuenta;
+    private int depositar
 
     public cuentabancaria(string titular, double saldo, int numeroCuenta) {
         this.titular = titular;
         this.saldo = saldo;
         this.numeroCuenta = numeroCuenta;
+        this.depositar = 0;
+
     }
+    public 
     public string getTitular() {
         return titular;
         if (titular == null || titular.isEmpty()) {
@@ -33,13 +37,20 @@ public class cuentabancaria {
         system.out.println("Titular: " + cuenta1.getTitular() + ", Saldo: $" + cuenta1.getSaldo());
         system.out.println("Titular: " + cuenta2.getTitular() + ", Saldo: $" + cuenta2.getSaldo());
     }
-    //intento de titular vacio
-    cuenta.settitular("");
-    //intento de saldo negativo
-    cuenta.getsaldo(-5555.0);
+    Try {
+        System.out.println("intentando asignar titular vacio...");
+        cuenta.setTitular("");
+    } catch (IllegalArgumentException e) {
+        System.out.println("Error: " + e.getMessage());
+    try {
+        System.out.println("intentando asignar saldo negativo...");
+        cuenta.setSaldo(-100.0);
+    } catch (IllegalArgumentException e) {
+        System.out.println("Error: " + e.getMessage());
+    }
     
-    system.out.println("Titular: " + cuenta.getTitular() + ", Saldo: $" + cuenta.getSaldo());
-
-
-
+    
+    system.out.println("\estado de la cuenta tras intentos invalidos");
+    system.out.println("titular" + cuenta.gettitular());
+    system.out.println("saldo" + cuenta.getsaldo());
 }

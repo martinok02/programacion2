@@ -9,7 +9,7 @@ public class Main {
 
         lista.mostrar();
 
-        System.out.println("Buscar 8: " + lista.buscar(8));
-        System.out.println("Buscar 99: " + lista.buscar(99));
+        System.out.println("Buscar 1: " + lista.buscar(2));
+        System.out.println("Buscar 4: " + lista.buscar(4));
     }
 }

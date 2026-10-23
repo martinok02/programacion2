@@ -1,0 +1,21 @@
+package TADs;
+
+public class MyLista {
+
+    Nodo primero;
+
+    public void agregar(int dato){
+        Nodo nuevoNodo = new Nodo(dato);
+        nuevoNodo.siguiente = primero;
+        primero = nuevo;
+    }
+
+    public void recorrer() {
+        Nodo actual = primero;
+
+        while (actual != null) {
+            System.out.println(actual.dato+"-> ");
+            actual = actual.siguiente;
+        }
+    }
+}

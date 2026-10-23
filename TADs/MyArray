@@ -1,0 +1,14 @@
+package TADs;
+
+public class MyArray {
+
+    int[] elementos;
+
+    public MyArray(int cantidad) {
+        this.elementos = new int[cantidad];
+    }
+    
+    public void add(int elemento){
+        this.elementos[this.elementos.length - 1] = elemento;
+    }
+}

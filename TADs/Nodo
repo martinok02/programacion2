@@ -1,0 +1,8 @@
+public class Nodo {
+    int dato;
+    nodo siguiente;
+
+public class Lista {
+    Nodo primero; //null = vacia
+    }
+}
